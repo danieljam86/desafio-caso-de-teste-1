@@ -50,7 +50,7 @@ namespace desafio_caso_de_teste_1
             {
                 dgvProdutos.Rows.Add(rowarray);
             }
-
+            Metodos.Grade(dgvProdutos);
 
 
             dgvVendas.ColumnCount = 4;
@@ -75,7 +75,7 @@ namespace desafio_caso_de_teste_1
             {
                 dgvVendas.Rows.Add(rowarray);
             }
-
+            Metodos.Grade(dgvVendas);
 
             dgvTrasfere.ColumnCount = 7;
             dgvTrasfere.Columns[0].Name = "CodProduto";
@@ -106,8 +106,8 @@ namespace desafio_caso_de_teste_1
                 {
                     dgvTrasfere.Rows.Add(rowarray);
                 }
+            Metodos.Grade(dgvTrasfere);
 
-            
         }
     }
 }

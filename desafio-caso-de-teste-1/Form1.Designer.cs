@@ -41,12 +41,14 @@
             // 
             // dgvProdutos
             // 
+            this.dgvProdutos.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProdutos.Location = new System.Drawing.Point(12, 45);
+            this.dgvProdutos.Location = new System.Drawing.Point(12, 32);
             this.dgvProdutos.Name = "dgvProdutos";
+            this.dgvProdutos.RowHeadersVisible = false;
             this.dgvProdutos.RowHeadersWidth = 51;
             this.dgvProdutos.RowTemplate.Height = 29;
-            this.dgvProdutos.Size = new System.Drawing.Size(414, 302);
+            this.dgvProdutos.Size = new System.Drawing.Size(559, 244);
             this.dgvProdutos.TabIndex = 0;
             // 
             // label1
@@ -61,7 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 350);
+            this.label2.Location = new System.Drawing.Point(577, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 20);
             this.label2.TabIndex = 3;
@@ -69,38 +71,42 @@
             // 
             // dgvVendas
             // 
+            this.dgvVendas.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvVendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVendas.Location = new System.Drawing.Point(12, 373);
+            this.dgvVendas.Location = new System.Drawing.Point(577, 32);
             this.dgvVendas.Name = "dgvVendas";
+            this.dgvVendas.RowHeadersVisible = false;
             this.dgvVendas.RowHeadersWidth = 51;
             this.dgvVendas.RowTemplate.Height = 29;
-            this.dgvVendas.Size = new System.Drawing.Size(781, 234);
+            this.dgvVendas.Size = new System.Drawing.Size(724, 244);
             this.dgvVendas.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(432, 9);
+            this.label3.Location = new System.Drawing.Point(12, 300);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 20);
+            this.label3.Size = new System.Drawing.Size(69, 20);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Trasfere";
+            this.label3.Text = "Transfere";
             // 
             // dgvTrasfere
             // 
+            this.dgvTrasfere.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvTrasfere.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTrasfere.Location = new System.Drawing.Point(432, 45);
+            this.dgvTrasfere.Location = new System.Drawing.Point(12, 323);
             this.dgvTrasfere.Name = "dgvTrasfere";
+            this.dgvTrasfere.RowHeadersVisible = false;
             this.dgvTrasfere.RowHeadersWidth = 51;
             this.dgvTrasfere.RowTemplate.Height = 29;
-            this.dgvTrasfere.Size = new System.Drawing.Size(977, 322);
+            this.dgvTrasfere.Size = new System.Drawing.Size(1289, 298);
             this.dgvTrasfere.TabIndex = 4;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1421, 686);
+            this.ClientSize = new System.Drawing.Size(1313, 644);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dgvTrasfere);
             this.Controls.Add(this.label2);

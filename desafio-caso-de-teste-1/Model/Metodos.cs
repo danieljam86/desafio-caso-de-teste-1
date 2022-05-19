@@ -12,7 +12,6 @@ namespace desafio_caso_de_teste_1.Model
         public static string caminhoArquivosEntrada = AppDomain.CurrentDomain.BaseDirectory + "ArquivosEntrada\\";
         public static string caminhoArquivosSaida = AppDomain.CurrentDomain.BaseDirectory + "ArquivosSaida\\";
 
-
         public static string[] LerArquivosEntrada()
         {
             arquivosEntrada = System.IO.Directory.GetFiles(caminhoArquivosEntrada);
@@ -104,12 +103,6 @@ namespace desafio_caso_de_teste_1.Model
                     {
                         transfere.EstAposVenda -= venda.QtdeVendida;
                         transfere.QtVendas += venda.QtdeVendida;
-                        //while (transfere.EstAposVenda < transfere.QtdeEstoqInicio + transfere.Necess)
-                        //{
-                        //    transfere.Necess = transfere.EstAposVenda * -1;
-                        //    transfere.TransfArmazempCo += transfere.Necess;
-                        //    transfere.EstAposVenda += transfere.Necess;
-                        //}
                     }
                 }
             }
@@ -127,7 +120,6 @@ namespace desafio_caso_de_teste_1.Model
                 {
                     transfere.TransfArmazempCo = transfere.Necess;
                 }
-                
             }
             return listaTransfere;
         }
@@ -138,25 +130,27 @@ namespace desafio_caso_de_teste_1.Model
             System.IO.File.WriteAllText(caminhoArquivo, texto);
         }
         
-
-        public DataGridView Grade(DataGridView dg)
+        
+        public static DataGridView Grade(DataGridView dg)
         {
             dg.EditMode = DataGridViewEditMode.EditProgrammatically;
             dg.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dg.AllowUserToAddRows = false;
             dg.AllowUserToDeleteRows = false;
             dg.DefaultCellStyle.Font = new Font("Roboto", 9);
-            dg.EnableHeadersVisualStyles = false; // Desabilita formatação padrão
+            dg.EnableHeadersVisualStyles = false;
             dg.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dg.ColumnHeadersHeight = 40;
             dg.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dg.ColumnHeadersDefaultCellStyle.Font = new Font("Roboto", 10, FontStyle.Bold);
             dg.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(55, 71, 79);
             dg.ColumnHeadersDefaultCellStyle.ForeColor = Color.LightGray;
-            dg.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.TopCenter;
-            //Vc pode usar um for se quiser 
+            dg.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dg.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dg.RowsDefaultCellStyle.BackColor = Color.White;
             dg.AlternatingRowsDefaultCellStyle.BackColor = Color.WhiteSmoke;
+            dg.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dg.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dg.MultiSelect = false;
             return dg;
         }
